@@ -1,0 +1,35 @@
+.header {
+  background: #ffffff;
+  position: sticky;
+  top: 0;
+  z-index: 9999; /* 🔥 garante que nada sobreponha */
+}
+
+/* MENU */
+.center-nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 600;
+  color: #263238;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--azul-riva);
+}
+
+.nav-link.active {
+  color: var(--azul-riva);
+  border-bottom: 2px solid var(--azul-riva);
+}
+
+/* TEXTO */
+p {
+  color: #263238;
+  line-height: 1.6;
+}

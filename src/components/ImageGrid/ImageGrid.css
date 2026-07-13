@@ -1,0 +1,33 @@
+/* =========================
+   GRID PRINCIPAL
+   ========================= */
+.image-grid {
+  display: grid;
+
+  /* 🔥 4 COLUNAS FIXAS NO DESKTOP */
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 20px;
+
+/*  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px; */
+}
+
+/* =========================
+   TABLET
+   ========================= */
+@media (max-width: 1024px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+@media (max-width: 600px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+  }
+}

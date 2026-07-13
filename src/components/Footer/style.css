@@ -1,0 +1,108 @@
+.footer {
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 20px 10px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #222;
+  border-top: 1px solid #ddd;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-links li {
+  position: relative;
+}
+
+.footer-links button {
+  background: none;
+  border: none;
+  color: #0072ce; /* Azul Cury */
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s;
+  font-size: 15px;
+}
+
+.footer-links button:hover {
+  color: #005fa3;
+  text-decoration: underline;
+}
+
+/* ==== MODAL ==== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+  background: #fff;
+  max-width: 600px;
+  width: 90%;
+  padding: 25px 30px;
+  border-radius: 12px;
+  position: relative;
+  text-align: left;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.3s ease;
+}
+
+.modal-content h2 {
+  color: #0072ce;
+  margin-bottom: 10px;
+}
+
+.modal-content p {
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #555;
+  transition: color 0.2s;
+}
+
+.close-btn:hover {
+  color: #0072ce;
+}
+
+/* Animações */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .modal-content {
+    padding: 20px;
+    font-size: 14px;
+  }
+}

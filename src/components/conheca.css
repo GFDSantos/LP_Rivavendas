@@ -1,0 +1,129 @@
+/* =========================
+   CONTAINER
+   ========================= */
+.conheca-section {
+  padding: 60px 20px;
+  background: #f8fafc;
+}
+
+/* 🔥 LAYOUT PRINCIPAL (ESSENCIAL) */
+.layout-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* 🔥 SIDEBAR (FILTROS) */
+.sidebar {
+  width: 260px;
+  min-width: 260px;
+  flex-shrink: 0;
+}
+
+/* 🔥 CONTEÚDO (IMAGENS) */
+.conteudo {
+  flex: 1;
+  min-width: 0;
+}
+
+/* =========================
+   HERO
+   ========================= */
+.conheca-hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.conheca-hero h1 {
+  font-size: 2.4rem;
+  color: var(--azul-riva);
+  margin-bottom: 10px;
+}
+
+.conheca-hero p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* =========================
+   CONTEÚDO
+   ========================= */
+.conheca-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.conteudo {
+  flex: 1;
+  width: 100%;
+}
+
+/* =========================
+   BLOCOS
+   ========================= */
+.bloco {
+  margin-bottom: 30px;
+}
+
+.bloco h2 {
+  color: var(--azul-riva);
+  margin-bottom: 8px;
+  font-size: 1.3rem;
+}
+
+.bloco p {
+  line-height: 1.6;
+  color: #333;
+}
+
+.bloco ul {
+  padding-left: 18px;
+}
+
+.bloco li {
+  margin-bottom: 6px;
+}
+
+/* =========================
+   DESTAQUE
+   ========================= */
+.bloco.destaque {
+  background: #ffffff;
+  padding: 20px;
+  border-left: 4px solid var(--azul-riva);
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+/* =========================
+   BOTÃO CTA
+   ========================= */
+.cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.cta button {
+  background: var(--azul-riva);
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta button:hover {
+  background: #0a2a66;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   RESPONSIVO
+   ========================= */
+@media (max-width: 768px) {
+  .conheca-hero h1 {
+    font-size: 1.8rem;
+  }
+}

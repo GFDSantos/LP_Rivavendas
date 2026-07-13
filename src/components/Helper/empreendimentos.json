@@ -1,0 +1,101 @@
+[
+   {
+    "id": 1,
+    "title": "Città Riva Gran Tijuca",
+    "image": "images/rivagrantijuca.png",
+    "description": "Fachada / Piscina Città Riva Gran Tijuca",
+    "status": "breve",
+    "bairro": "tijuca"
+  },
+  
+  {
+    "id": 2,
+    "title": "Ilhamar Beach Home - Barra da Tijuca",
+    "image": "images/ilhamar.png",
+    "description": "Piscina Ilha Mar Beach Home",
+    "status": "lancamento",
+    "bairro": "barra"
+  },
+
+    {
+    "id": 3,
+    "title": "Marine Barra Residenca - Barra da Tijuca",
+    "image": "images/marinebarra.png",
+    "description": "Fachada Marine Barra Residence",
+    "status": "avancadas",
+    "bairro": "barra"
+  },
+
+    {
+    "id": 4,
+    "title": "Duet Barra Residence - Barra da Tijuca",
+    "image": "images/duetbarra.png",
+    "description": "Fachada Duet Barra Residence",
+    "status": "pronto",
+    "bairro": "barra"
+  },
+
+    {
+    "id": 5,
+    "title": "Sky Mário Guimarães - Centro Nova Iguaçu",
+    "image": "images/skymarioguimaraes.png",
+    "description": "Fachada Sky Mario Guimarães",
+    "status": "obras",
+    "bairro": "nova_iguacu"
+  },
+
+    {
+    "id": 6,
+    "title": "Ocean Side - Pontal Oceânico",
+    "image": "images/oceanside.png",
+    "description": "Perpectiva Fachada Ocean Side",
+    "status": "avancadas",
+    "bairro": "recreio"
+  },
+
+    {
+    "id": 7,
+    "title": "Vibe Sunset - Recreio dos Bandeirantes",
+    "image": "images/vibesunset.png",
+    "description": "Fachada Vibe Sunset",
+    "status": "avancadas",
+    "bairro": "recreio"
+  },
+
+    {
+    "id": 8,
+    "title": "Gentileza Be On Porto Residencial",
+    "image": "images/beonporto.png",
+    "description": "Fachada Be On Porto Residencial",
+    "status": "avancadas",
+    "bairro": "sao_cristovao"
+  },
+
+    {
+    "id": 9,
+    "title": "Origem Porto Imperial",
+    "image": "images/origemportoimperial.png",
+    "description": "Fachada Origem Porto Imperial",
+    "status": "avancadas",
+    "bairro": "sao_cristovao"
+  },
+
+    {
+    "id": 10,
+    "title": "Villa Santé - Pechincha",
+    "image": "images/villasante.png",
+    "description": "Fachada Villa Santé",
+    "status": "avancadas",
+    "bairro": "pechincha"
+  },
+
+    {
+    "id": 11,
+    "title": "Apogeu Barra - Barra da Tijuca",
+    "image": "images/apogeubarra.png",
+    "description": "Fachada Apogeu Barra",
+    "status": "portfolio",
+    "bairro": "barra"
+  } 
+
+]

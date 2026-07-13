@@ -1,0 +1,28 @@
+.card{
+  display: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  min-height: 100vh;
+  width: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--azul-riva-claro);
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+}

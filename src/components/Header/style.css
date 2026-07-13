@@ -1,0 +1,81 @@
+.header {
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+
+  position: sticky;
+  top: 0;
+
+  z-index: 9999; /* 🔥 AQUI É O SEGREDO */
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 12px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-link.active {
+  color: var(--azul-riva);
+  border-bottom: 2px solid var(--azul-riva);
+}
+
+.logo {
+  height: 55px;
+}
+
+.center-nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: 600;
+  color: #263238;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #2e7d32;
+}
+
+/* Botão WhatsApp */
+.whatsapp {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #25d366;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 3px 10px rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp:hover {
+  background-color: #1ebc57;
+  transform: translateY(-2px);
+}
+
+.whatsapp-icon {
+  width: 22px;
+  height: 22px;
+}
+
+
+/* Mobile */
+@media (max-width: 900px) {
+  .header-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .center-nav {
+    flex-direction: column;
+  }
+}
