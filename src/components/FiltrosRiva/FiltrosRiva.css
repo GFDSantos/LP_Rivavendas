@@ -1,46 +1,93 @@
 .filtros-container {
+
   background: #ffffff;
+
   padding: 20px;
+
   border-radius: 12px;
 
   width: 100%;
-  max-width: 260px; /* 🔥 ESSENCIAL */
 
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+
 }
+
 
 /* TÍTULOS */
+
 .filtros-container h2 {
+
   margin-top: 15px;
+
   margin-bottom: 10px;
+
   color: #0a2a66;
+
   font-size: 16px;
+
 }
+
 
 /* BOTÕES */
+
 .filtros-container button {
+
   width: 100%;
+
   padding: 10px;
+
   margin-bottom: 8px;
+
   border: none;
+
   border-radius: 8px;
+
   background: #f1f1f1;
+
   cursor: pointer;
+
   transition: 0.2s;
+
 }
+
 
 .filtros-container button:hover {
+
   background: #e0e0e0;
+
 }
+
 
 .filtros-container button.ativo {
+
   background: #0a2a66;
-  color: #fff;
+
+  color:#fff;
+
 }
 
-/* BOTÃO LIMPAR */
+
+/* LIMPAR */
+
 .limpar {
-  margin-top: 15px;
-  background: #c62828 !important;
-  color: white;
+
+  margin-top:15px;
+
+  background:#c62828 !important;
+
+  color:white;
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+  .filtros-container{
+
+    max-width:none;
+
+  }
+
 }

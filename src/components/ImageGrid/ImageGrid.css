@@ -1,33 +1,29 @@
-/* =========================
-   GRID PRINCIPAL
-   ========================= */
 .image-grid {
-  display: grid;
-
-  /* 🔥 4 COLUNAS FIXAS NO DESKTOP */
-  grid-template-columns: repeat(4, 1fr);
-
-  gap: 20px;
-
-/*  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px; */
+display:grid;
+grid-template-columns:
+repeat(4, minmax(180px,1fr));
+gap:20px;
+width:100%;
+}
+/* TABLET */
+@media(max-width:1200px){
+.image-grid{
+grid-template-columns:
+repeat(3,minmax(180px,1fr));
+}
+}
+/* TABLET PEQUENO */
+@media(max-width:900px){
+.image-grid{
+grid-template-columns:
+repeat(2,minmax(160px,1fr));
+}
 }
 
-/* =========================
-   TABLET
-   ========================= */
-@media (max-width: 1024px) {
-  .image-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+/* MOBILE */
+@media(max-width:600px){
+.image-grid{
+grid-template-columns:
+1fr;
 }
-
-/* =========================
-   MOBILE
-   ========================= */
-@media (max-width: 600px) {
-  .image-grid {
-    grid-template-columns: 1fr;
-  }
 }

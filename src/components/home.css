@@ -1,51 +1,44 @@
 /* =========================
-   CONTAINER HOME
-   ========================= */
-.home-section {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+   HOME PRINCIPAL
+========================= */
+.conheca-section {
+  min-height:100vh;
+  padding:30px 20px;
 }
-
 /* =========================
    LAYOUT PRINCIPAL
-   ========================= */
-.home-layout {
-  display: flex;
-  flex: 1;
-  gap: 20px;
-  padding: 20px;
+========================= */
+.layout-container {
+  display:flex;
+  flex-direction:row;
+  align-items:flex-start;
+  gap:25px;
+  width:100%;
 }
 
 /* =========================
    SIDEBAR
-   ========================= */
+========================= */
 .sidebar {
-  width: 260px;
-  min-width: 260px;
-  flex-shrink: 0;
-  background: #f5f5f5;
-  padding: 15px;
-  border-radius: 10px;
+  width:260px;
+  flex:0 0 260px;
 }
-
 /* =========================
-   CONTEÚDO
-   ========================= */
+   CONTEÚDO DAS IMAGENS
+========================= */
 .conteudo {
-  flex: 1;
-  min-width: 0;
+  flex:1;
+  min-width:0;
 }
-
 /* =========================
    RESPONSIVO
-   ========================= */
-@media (max-width: 768px) {
-  .home-layout {
-    flex-direction: column;
-  }
-
-  .sidebar {
-    width: 100%;
-  }
+========================= */
+@media(max-width:900px){
+.layout-container{
+flex-direction:column;
 }
+.sidebar{
+width:100%;
+}
+}
+

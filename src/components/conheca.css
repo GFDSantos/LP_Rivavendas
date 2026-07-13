@@ -1,34 +1,50 @@
 /* =========================
    CONTAINER
-   ========================= */
+========================= */
+
 .conheca-section {
   padding: 60px 20px;
   background: #f8fafc;
 }
 
-/* 🔥 LAYOUT PRINCIPAL (ESSENCIAL) */
+
+/* =========================
+   LAYOUT PRINCIPAL
+========================= */
+
 .layout-container {
   display: flex;
   gap: 20px;
   align-items: flex-start;
 }
 
-/* 🔥 SIDEBAR (FILTROS) */
+
+/* =========================
+   SIDEBAR
+========================= */
+
 .sidebar {
   width: 260px;
   min-width: 260px;
   flex-shrink: 0;
 }
 
-/* 🔥 CONTEÚDO (IMAGENS) */
+
+/* =========================
+   CONTEÚDO
+========================= */
+
 .conteudo {
   flex: 1;
   min-width: 0;
+  width: 100%;
 }
+
 
 /* =========================
    HERO
-   ========================= */
+========================= */
+
 .conheca-hero {
   text-align: center;
   margin-bottom: 50px;
@@ -45,22 +61,21 @@
   color: #555;
 }
 
+
 /* =========================
-   CONTEÚDO
-   ========================= */
+   CONTAINER TEXTO
+========================= */
+
 .conheca-container {
   max-width: 900px;
   margin: 0 auto;
 }
 
-.conteudo {
-  flex: 1;
-  width: 100%;
-}
 
 /* =========================
    BLOCOS
-   ========================= */
+========================= */
+
 .bloco {
   margin-bottom: 30px;
 }
@@ -84,9 +99,11 @@
   margin-bottom: 6px;
 }
 
+
 /* =========================
    DESTAQUE
-   ========================= */
+========================= */
+
 .bloco.destaque {
   background: #ffffff;
   padding: 20px;
@@ -95,9 +112,11 @@
   font-weight: 500;
 }
 
+
 /* =========================
-   BOTÃO CTA
-   ========================= */
+   CTA
+========================= */
+
 .cta {
   text-align: center;
   margin-top: 40px;
@@ -119,11 +138,77 @@
   transform: translateY(-2px);
 }
 
+
 /* =========================
-   RESPONSIVO
-   ========================= */
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .layout-container {
+    flex-direction: column;
+  }
+
+
+  .sidebar {
+    width: 100%;
+    min-width: 100%;
+  }
+
+
+  .conteudo {
+    width: 100%;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
 @media (max-width: 768px) {
+
+  .conheca-section {
+    padding: 40px 15px;
+  }
+
+
+  .conheca-hero {
+    margin-bottom: 30px;
+  }
+
+
   .conheca-hero h1 {
     font-size: 1.8rem;
   }
+
+
+  .conheca-hero p {
+    font-size: 1rem;
+  }
+
+
+  .bloco.destaque {
+    padding: 15px;
+  }
+
+}
+
+
+/* =========================
+   CELULARES PEQUENOS
+========================= */
+
+@media (max-width: 480px) {
+
+  .conheca-hero h1 {
+    font-size: 1.5rem;
+  }
+
+
+  .cta button {
+    width: 100%;
+  }
+
 }

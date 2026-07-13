@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 import Footer from "./Footer/Footer";
 import ImageGrid from "./ImageGrid/ImageGrid";
 import FiltrosRiva from "./FiltrosRiva/FiltrosRiva";
-import "./conheca.css";
+import "./Home.css";
 
 function Home() {
   const [filtroStatus, setFiltroStatus] = useState(null);
